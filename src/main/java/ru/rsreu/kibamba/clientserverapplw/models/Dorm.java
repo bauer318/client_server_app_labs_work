@@ -1,11 +1,5 @@
 package ru.rsreu.kibamba.clientserverapplw.models;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
-
 public class Dorm {
     private int id;
     private String address;

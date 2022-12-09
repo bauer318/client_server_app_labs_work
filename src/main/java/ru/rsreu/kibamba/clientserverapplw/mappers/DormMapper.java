@@ -3,7 +3,6 @@ package ru.rsreu.kibamba.clientserverapplw.mappers;
 import org.springframework.jdbc.core.RowMapper;
 import ru.rsreu.kibamba.clientserverapplw.models.Dorm;
 
-import javax.swing.tree.TreePath;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

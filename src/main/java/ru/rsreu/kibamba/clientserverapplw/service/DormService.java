@@ -2,9 +2,7 @@ package ru.rsreu.kibamba.clientserverapplw.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
-import org.springframework.jdbc.core.CallableStatementCreator;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.SqlParameter;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcCall;
@@ -14,21 +12,15 @@ import ru.rsreu.kibamba.clientserverapplw.mappers.DormMapper;
 import ru.rsreu.kibamba.clientserverapplw.models.Dorm;
 
 import javax.sql.DataSource;
-import java.sql.CallableStatement;
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Types;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 @Repository
-public class DormServiceImpl implements DormRepository{
+public class DormService implements DormRepository{
 
     private final JdbcTemplate jdbcTemplate;
 
     @Autowired
-    public DormServiceImpl(JdbcTemplate jdbcTemplate) {
+    public DormService(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="htpp://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>delete dorm</title>
+</head>
+<body>
+<form th:method="DELETE" th:action="@{/dorms/{id}(id=${dorm.getId()})}"  th:object="${dorm}">
+  <label>Номер общежития <span th:text="${dorm.id}"> Number </span> </label>
+  <br/>
+  <label>Адресс общежития  <td><span th:text="${dorm.address}"> Address </span></td></label>
+  <br/>
+  <label>Количество жилых комнат  <td><span th:text="${dorm.numberLivingRooms}"> Living room </span></td></label>
+  <br/>
+  <input type="submit" value="Удалить" />
+</form>
+</body>
+</html>

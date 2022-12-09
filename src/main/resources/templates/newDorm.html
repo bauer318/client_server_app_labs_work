@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="htpp://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>create dorm</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/}" th:object="${dorm}">
+  <label>Номер общежития </label>
+  <input type="text" th:field="*{id}" id="dormId"/>
+  <br/>
+  <label>Адресс общежития </label>
+  <input type="text" th:field="*{address}" id="address"/>
+  <br/>
+  <label>Количество жилых комнат</label>
+  <input type="number" th:field="*{numberLivingRooms}" id="numberLivingRooms">
+  <br/>
+  <input type="submit" value="Создать" />
+</form>
+</body>
+</html>

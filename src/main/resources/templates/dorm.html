@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="htpp://www.w3.org/1999/xhtml" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dorm</title>
+</head>
+<body>
+<label>Номер общежития:
+    <strong> <span th:text="${dorm.id}"> Number </span> </strong></label>
+<br/>
+<label>Адресс общежития :
+    <strong><span th:text="${dorm.address}"> Address </span></strong></label>
+<br/>
+<label>Количество жилых комнат:
+    <strong><span th:text="${dorm.numberLivingRooms}"> Living room </span></strong></label>
+<br/>
+</body>
+</html>

@@ -15,18 +15,6 @@
 </head>
 <body>
     <h1>Student Hostel</h1>
-    <h3>Список общежитий</h3>
-    <table>
-        <th>Номер общежития</th>
-        <th>Адресс общежития</th>
-        <th>Количество жилых комнат</th>
-        <div th:each="dorm:${dorms}">
-            <tr >
-                <td><span th:text="${dorm.id}"> Number </span></td>
-                <td><span th:text="${dorm.address}"> Address </span></td>
-                <td><span th:text="${dorm.numberLivingRooms}"> Living room </span></td>
-            </tr>
-        </div>
-    </table>
+
 </body>
 </html>
